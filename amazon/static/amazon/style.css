@@ -1,13 +1,8 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: white;
+    background-color: rgb(241, 189, 241);
     margin: 0;
     padding: 20px;
-}
-
-h1 {
-    color: #222;
-    margin-bottom: 30px;
 }
 
 div {
@@ -15,7 +10,8 @@ div {
     width: 220px;
     padding: 12px;
     margin: 12px;
-    border: 1px solid white;
+    border: 3px solid rgb(236, 52, 236);
     display: inline-block;
     text-align: center;
 }
+

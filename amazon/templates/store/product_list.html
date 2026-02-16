@@ -9,10 +9,10 @@
 </head>
 <body>
 
-<center><h1>PRODUCTS</h1></center>
+<center><h1 style="text-align:center; color: rgb(124, 11, 230);">PRODUCTS</h1></center>
 
 {% for product in products %}
-<div>
+<div class="product">
     <img src="{{ product.image.url }}" width="200">
     <h3>{{ product.name }}</h3>
     <p>PRICE: ${{ product.price }}</p>
