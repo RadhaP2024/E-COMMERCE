@@ -1,0 +1,22 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+venv/
+env/
+myenv/
+.venv/
+
+# Environment variables (IMPORTANT)
+.env
+*.env
+
+# Django stuff
+db.sqlite3
+*.log
+media/
+
+# Flask instance folder
+instance/
