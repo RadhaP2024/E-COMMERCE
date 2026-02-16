@@ -1,19 +1,19 @@
 <center><h1>CART</h1></center>
+
 {% if cart_items %}
-    {% for item in cart_items %}
-        <h3>{{ item.product.price}}</h3>
-        <p>Price:{{ item.product.price}}</p>
-        <p>Quantity:{{ item.quantity}}</p>
-        <p>Total:{{ item.total }}</p>
-
-        <a href="{% url 'increase' item.product.id %}">+</a>
-        <a href="{% url 'decrease' item.product.id %}">-</a>
-        <a href="{% url 'remove' item.product.id %}">Remove</a>
-    {% endfor %}
-    <h2>Total : {{ final_amount }} </h2>
+  {% for item in cart_items %}
+    <b>{{ item.product.name }}</b><br>
+    Price: ${{ item.product.price }}<br>
+    Quantity: {{ item.quantity }}<br>
+    Total: ${{ item.total }}<br>
+    <a href="{% url 'increase' item.product.id %}">Increase</a>
+    <a href="{% url 'decrease' item.product.id %}">Decrease</a>
+    <a href="{% url 'remove' item.product.id %}">Remove</a>
+    <br><br>
+  {% endfor %}
+  <h3>Total Amount: ${{ final_amount }}</h3>
 {% else %}
-        <p>cart is empty!</p>
+  <p>Your cart is empty!</p>
 {% endif %}
-<a href="{% url 'product_list' %}"> continue shopping..</a>
 
-
+<a href="{% url 'product_list' %}">Continue Shopping</a>

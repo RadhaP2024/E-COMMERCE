@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #222;
+    margin-bottom: 30px;
+}
+
+div {
+    background: white;
+    width: 220px;
+    padding: 12px;
+    margin: 12px;
+    border: 1px solid white;
+    display: inline-block;
+    text-align: center;
+}
