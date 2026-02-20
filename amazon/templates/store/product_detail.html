@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ product.name }}</title>
+    <link rel="stylesheet" href="{% static 'amazon/style.css' %}">
+</head>
+<body>
+<div>
+    
+    {% block content %}
+
+    <h2>{{ product.name }}</h2>
+
+    {% if product.image %}
+        <img src="{{ product.image.url }}" alt="{{ product.name }}">
+    {% endif %}
+
+    <p>{{ product.description }}</p>
+    <p>Price: ₹{{ product.price }}</p>
+
+    <a href="{% url 'add_to_cart' product.id %}">ADD TO CART</a>
+
+    {% endblock %}
+</div>
+</body>
+</html>
